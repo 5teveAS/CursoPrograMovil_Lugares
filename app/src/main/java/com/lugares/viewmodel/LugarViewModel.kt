@@ -14,7 +14,7 @@ class LugarViewModel(application: Application)
     private val repository: LugarRepository = LugarRepository(LugarDao())
     init {
         //val lugarDao = LugarDatabase.getDatabase(application).lugarDao()
-        // repository = LugarRepository(lugarDao)
+       // repository = LugarRepository(lugarDao)
         getAllData = repository.getAllData
     }
     suspend fun addLugar(lugar: Lugar) {
@@ -25,9 +25,9 @@ class LugarViewModel(application: Application)
         //viewModelScope.launch(Dispatchers.IO) {repository.updateLugar(lugar)}
         repository.addLugar(lugar)
     }
-    suspend fun deleteLugar(lugar: Lugar){
+   suspend fun deleteLugar(lugar: Lugar){
         //viewModelScope.launch(Dispatchers.IO) {repository.deleteLugar(lugar)}
         repository.deleteLugar(lugar)
-    }
+   }
 
 }

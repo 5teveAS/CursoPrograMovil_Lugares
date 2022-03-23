@@ -11,6 +11,7 @@ import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.ktx.Firebase
 import com.lugares.model.Lugar
 
+//@Dao
 class LugarDao {
 
     private lateinit var codigoUsuario: String
@@ -24,7 +25,7 @@ class LugarDao {
     }
 
     //Para obtener la lista de Lugares
-    fun getLugares(): MutableLiveData<List<Lugar>> {
+    fun getLugares(): MutableLiveData<List<Lugar>>{
         val listaLugares = MutableLiveData<List<Lugar>>()
         firestore.collection("lugaresApp")
             .document(codigoUsuario)
@@ -32,7 +33,7 @@ class LugarDao {
             .addSnapshotListener{ snapshot, e->
                 if (e != null){
                     return@addSnapshotListener
-                }
+            }
                 if(snapshot != null){
                     val lista = ArrayList<Lugar>()
                     val lugares = snapshot.documents
@@ -58,7 +59,7 @@ class LugarDao {
                 .document(codigoUsuario)
                 .collection("misLugares")
                 .document()
-            lugar.id = document.id
+                lugar.id = document.id
         } else {
             document = firestore
                 .collection("lugaresApp")
@@ -78,7 +79,7 @@ class LugarDao {
     fun deleteLugar(lugar:Lugar){
         if(lugar.id.isNotEmpty()){
             firestore
-                .collection("LugaresApp")
+            .collection("LugaresApp")
                 .document(codigoUsuario)
                 .collection("misLugares")
                 .document(lugar.id)
@@ -97,7 +98,7 @@ class LugarDao {
     //fun getAllData() : LiveData<List<Lugar>>
 
     //@Insert(onConflict = OnConflictStrategy.IGNORE)
-    // suspend fun addLugar(lugar: Lugar)
+   // suspend fun addLugar(lugar: Lugar)
 
     //@Update(onConflict = OnConflictStrategy.IGNORE)
     //suspend fun updateLugar(lugar: Lugar)

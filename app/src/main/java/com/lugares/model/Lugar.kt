@@ -7,7 +7,9 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
+
 data class Lugar(
+
     var id: String,
     val nombre: String,
     val correo: String?,
@@ -22,6 +24,6 @@ data class Lugar(
 ) : Parcelable
 {
     constructor():
-            this("","","","","",0.0,0.0,0.0,"","")
+    this("","","","","",0.0,0.0,0.0,"","")
 }
 
