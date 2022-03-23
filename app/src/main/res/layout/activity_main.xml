@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+<<<<<<< HEAD
     android:padding="20dp"
+=======
+    android:padding="20px"
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
     tools:context=".MainActivity">
 
     <TextView
@@ -14,17 +18,28 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_correo"
         android:textAlignment="center"
+<<<<<<< HEAD
         android:textSize="34sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_correo"
+=======
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/et_email"
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
+<<<<<<< HEAD
         android:textSize="34sp" />
+=======
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
 
     <TextView
         android:id="@+id/textView2"
@@ -32,17 +47,28 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_clave"
         android:textAlignment="center"
+<<<<<<< HEAD
         android:textSize="34sp" />
+=======
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
 
     <EditText
         android:id="@+id/et_clave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:contentDescription="@string/msg_clave"
         android:ems="10"
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textSize="34sp" />
+=======
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +80,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+<<<<<<< HEAD
             android:contentDescription="@string/msg_btRegister"
+=======
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
             app:srcCompat="@drawable/ic_register" />
 
         <ImageButton
@@ -62,7 +91,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+<<<<<<< HEAD
             android:contentDescription="@string/msg_btLogin"
+=======
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
             app:srcCompat="@drawable/ic_login" />
     </LinearLayout>
 </LinearLayout>

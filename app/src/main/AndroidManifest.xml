@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.lugares">
 
     <!-- Este permiso es para informar al android que esta app eventualmente hace llamadas telefonicas -->
@@ -8,6 +9,9 @@
     <!-- Estos permisos son para ubicar las coordenadas GPS donde se encuentra el celular -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+=======
+    package="com.example.lugares">
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
 
     <application
         android:allowBackup="true"
@@ -15,12 +19,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.Lugares_s">
+=======
+        android:theme="@style/Theme.Lugares">
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
         <activity
             android:name=".Principal"
             android:exported="false"
             android:label="@string/title_activity_principal"
+<<<<<<< HEAD
             android:theme="@style/Theme.Lugares_s.NoActionBar" />
+=======
+            android:theme="@style/Theme.Lugares.NoActionBar" />
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
         <activity
             android:name=".MainActivity"
             android:exported="true">

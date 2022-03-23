@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Theme.Lugares_s" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+=======
+    <style name="Theme.Lugares" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -14,12 +18,22 @@
         <!-- Customize your theme here. -->
     </style>
 
+<<<<<<< HEAD
     <style name="Theme.Lugares_s.NoActionBar">
+=======
+    <style name="Theme.Lugares.NoActionBar">
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
+<<<<<<< HEAD
     <style name="Theme.Lugares_s.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Lugares_s.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+=======
+    <style name="Theme.Lugares.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Lugares.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+>>>>>>> 54596995e383af3510797cb01f925f02528240bb
 </resources>
