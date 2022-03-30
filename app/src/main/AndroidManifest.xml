@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.lugares">
 
-    <!-- Este permiso es para informar al android que esta app eventualmente hace llamadas telefonicas -->
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+<!-- Este permiso es para hacer una llamada telefónica -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
-    <!-- Estos permisos son para ubicar las coordenadas GPS donde se encuentra el celular -->
+    <!-- Esos permisos permiten la geolocalización -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+<!--    Permisos para uso de microfono y camara-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage"/>
+
 
     <application
         android:allowBackup="true"
@@ -15,12 +21,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lugares_s">
+        android:theme="@style/Theme.Lugares">
         <activity
             android:name=".Principal"
             android:exported="false"
             android:label="@string/title_activity_principal"
-            android:theme="@style/Theme.Lugares_s.NoActionBar" />
+            android:theme="@style/Theme.Lugares.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -30,6 +36,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                />
+        </provider>
     </application>
 
 </manifest>

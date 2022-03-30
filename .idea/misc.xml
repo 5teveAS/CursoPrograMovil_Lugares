@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/Lugares_s/app/src/main/res/drawable/ic_add_lugar.xml" value="0.14" />
+        <entry key="..\:/Users/Steve AS/Documents/PROGRAMOVIL/profe/Lugares/app/src/main/res/drawable/ic_mic.xml" value="0.2985" />
+        <entry key="..\:/Users/Steve AS/Documents/PROGRAMOVIL/profe/Lugares/app/src/main/res/layout/fragment_add_lugar.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Steve AS/Documents/PROGRAMOVIL/profe/Lugares/app/src/main/res/layout/fragment_update_lugar.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>

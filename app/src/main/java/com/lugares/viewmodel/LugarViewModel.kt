@@ -12,22 +12,17 @@ class LugarViewModel(application: Application)
     val getAllData : MutableLiveData<List<Lugar>>
 
     private val repository: LugarRepository = LugarRepository(LugarDao())
+
     init {
-        //val lugarDao = LugarDatabase.getDatabase(application).lugarDao()
-       // repository = LugarRepository(lugarDao)
         getAllData = repository.getAllData
     }
-    suspend fun addLugar(lugar: Lugar) {
-        //viewModelScope.launch(Dispatchers.IO) {repository.addLugar(lugar)}
+    fun addLugar(lugar: Lugar) {
         repository.addLugar(lugar)
     }
-    suspend fun updateLugar(lugar: Lugar) {
-        //viewModelScope.launch(Dispatchers.IO) {repository.updateLugar(lugar)}
-        repository.addLugar(lugar)
+    fun updateLugar(lugar: Lugar) {
+        repository.updateLugar(lugar)
     }
-   suspend fun deleteLugar(lugar: Lugar){
-        //viewModelScope.launch(Dispatchers.IO) {repository.deleteLugar(lugar)}
+    fun deleteLugar(lugar: Lugar){
         repository.deleteLugar(lugar)
-   }
-
+    }
 }
