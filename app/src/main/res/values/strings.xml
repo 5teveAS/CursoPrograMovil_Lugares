@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lugares</string>
+    <string name="app_name" translatable="false">Lugares</string>
     <string name="tv_correo">Correo</string>
     <string name="tv_clave">Contraseña</string>
     <string name="msg_correo">Campo para ingresar su correo</string>
@@ -11,8 +11,8 @@
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -54,23 +54,20 @@
     <string name="msg_firebase_no_add">ERROR: Lugar no agregado</string>
     <string name="msg_firebase_no_update">ERROR: Lugar no actualizado</string>
     <string name="msg_firebase_no_delete">ERROR: Lugar no eliminado</string>
-    <string name="error">Error</string>
+    <string name="error">0.0</string>
 
-    <string name="msgEscucharAudio">Escuchar nota de audio</string>
     <string name="msg_imagen">Imagen del lugar</string>
-    <string name="graba_pausa">Graba o pausa grabación</string>
-    <string name="escuchaPlay">Escucha grabación</string>
-    <string name="delete_nota">Borra nota de audio</string>
-    <string name="play_nota">Escuchar nota de audio</string>
-    <string name="rec_stop_nota">Graba o detiene nota de audio</string>
-    <string name="take_photo">Toma foto</string>
-    <string name="rotate_l">Rota izquierda</string>
-    <string name="rotale_r">Rota a la derecha</string>
+    <string name="msg_graba_pausa">Graba o pausa grabación</string>
+    <string name="msg_escucha_audio">Escucha nota de audio</string>
+    <string name="msg_delete_nota">Borra nota de audio</string>
+    <string name="msg_rec_stop_nota">Graba o detiene nota de audio</string>
+    <string name="msg_take_photo">Toma foto</string>
+    <string name="msg_rotate_l">Rota izquierda</string>
+    <string name="msg_rotale_r">Rota a la derecha</string>
     <string name="msg_graba_audio">Grabando nota de audio</string>
     <string name="msg_detener_audio">Nota de audio detenida</string>
     <string name="msg_subiendo_audio">Subiendo Nota Audio</string>
     <string name="msg_subiendo_imagen">Subiendo imagen</string>
-    <string name="todo">To Do</string>
-
-
+    <string name="msg_google">Login con Google</string>
+    <string name="default_web_client_id_r"  translatable="false">388292308915-7hpsofrm6ni1h0c0br4ac7jf4s6c6471.apps.googleusercontent.com</string>
 </resources>

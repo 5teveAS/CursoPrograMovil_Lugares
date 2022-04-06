@@ -97,13 +97,12 @@
                     android:contentDescription="@string/msg_web_view"
                     android:scaleType="fitCenter"
                     android:src="@drawable/web_logo" />
-
                 <ImageButton
                     android:id="@+id/btPlay"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:contentDescription="@string/msgEscucharAudio"
+                    android:contentDescription="@string/msg_escucha_audio"
                     android:src="@drawable/ic_play" />
 
             </LinearLayout>
